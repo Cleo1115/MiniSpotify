@@ -1,51 +1,46 @@
-# MiniSpotify
+# MiniSpotify: Kotlin-Based Mobile Music Streaming Application
 
-MiniSpotify is a mobile music streaming application based on Kotlin, designed to provide an efficient user experience through a separated frontend and backend architecture. The frontend utilizes Android Jetpack and Jetpack Compose for a modern user interface, while the backend leverages the Ktor framework to manage all server-side logic.
+## Overview
+MiniSpotify is a mobile music streaming application developed using Kotlin, designed to deliver a premium Spotify-like experience. It leverages advanced Android technologies to ensure a seamless and efficient user interface and robust backend interactions.
 
-## Architecture
-
-### Frontend
-- **Jetpack Compose**: Handles UI logic and rendering, ensuring a dynamic and responsive user experience.
-- **Jetpack Navigation**: Used to design a smooth and visually appealing in-app navigation system with a BottomBar.
-
-### Backend (using Ktor Framework)
-- **Ktor**: Serves as the server application framework, handling HTTP requests, routing, and data interactions with the frontend.
-- **Retrofit**: Integrated in the frontend to handle network requests, closely integrated with the Ktor backend to simulate real-world data interactions.
-- **Room Database**: Utilized in the frontend for local data storage and caching to optimize data retrieval and offline access.
-
-## Features
-
-- **Kotlin-Based Application**: Developed using Kotlin, incorporating Android Jetpack Libraries to facilitate a modular and efficient app architecture.
-- **Dependency Injection with Hilt**: Utilized Hilt for advanced dependency injection, resulting in clean and maintainable code.
-- **Jetpack Compose UI**: Created a compelling user interface using Jetpack Compose, aligning closely with Spotify's design and functionality standards.
-- **In-App Navigation**: Streamlined navigation with a BottomBar component via Jetpack Navigation, making user interactions smoother and more intuitive.
-- **Mock RESTful API**: Established a mock backend using Ktor to simulate real-world data interactions, integrated with Retrofit for network request handling.
-- **Local Data Caching**: Enabled local caching of user favorites using Room Database, which ensures optimized data retrieval and offline accessibility.
-- **Music Playback**: Implemented Google ExoPlayer to provide seamless music playback, offering a smooth and high-quality audio experience.
-
-## Technologies Used
+## Technical Specifications
 
 ### Frontend
-- **Jetpack Compose**: Handles the UI logic and rendering, providing a dynamic and responsive user experience.
-- **Jetpack Navigation**: Used for designing a responsive and visually appealing in-app navigation structure with BottomBar.
+- **Jetpack Compose**: Used to create a dynamic and engaging user interface that meets modern design standards.
+- **Jetpack Navigation**: Implemented with a BottomBar for smooth and intuitive navigation within the app.
 
 ### Backend
-- **Ktor**: Primary framework used for application logic on the server-side.
-- **Retrofit**: Used for handling network requests to communicate with the Ktor backend.
-- **Room Database**: Utilized for storing and caching user data locally to provide a seamless experience even without internet connectivity.
+- **Mock RESTful API**: Developed using json-server to simulate realistic data interactions for testing.
+- **Retrofit**: Manages network requests effectively, ensuring smooth data flow between client and server.
+- **Room Database**: Enhances data management by caching user preferences and favorites to improve offline capabilities.
 
-## Additional Libraries
-- **Hilt**: Used for dependency injection to improve the maintainability and modularity of the application.
-- **Google ExoPlayer**: Integrated for music playback, providing users with high-quality streaming of audio content.
+## Key Features
+- **Modular Architecture with Kotlin**: Utilizes Android Jetpack Libraries and Kotlin to create a scalable and maintainable app structure.
+- **Dependency Injection with Hilt**: Facilitates clean and manageable code through advanced dependency management.
+- **User-Friendly Interface**: Designed using Jetpack Compose to reflect Spotify’s intuitive usability and aesthetic.
+- **Efficient Navigation**: Includes a BottomBar for enhanced user flow and accessibility throughout the app.
+- **API Simulation**: Provides a mock backend with json-server for testing and demonstration purposes.
+- **Local Data Caching**: Uses Room Database for efficient and quick data retrieval, enhancing the user experience during offline access.
+- **High-Quality Music Playback**: Integrates Google ExoPlayer for continuous and high-quality audio streaming.
+- **Favorites Feature**: Allows users to favorite tracks or albums, creating personalized playlists easily accessible from the main navigation.
 
-## Demo
+## Technologies Used
+- **Languages**: Kotlin
+- **Frameworks/Libraries**: Android Jetpack (Compose, Navigation), Hilt, Retrofit, Room Database, Google ExoPlayer
 
-Below are screenshots showcasing the key features of MiniSpotify:
+## Demo Screenshots
+Here are some screenshots demonstrating the key functionalities of MiniSpotify, including the newly mentioned favorites feature:
 
 ### Home Screen
-
-The home screen displays personalized recommendations, including "Top mixes," "Made for you," and "This Is: K-Music" sections, ensuring users have easy access to their favorite tracks.
+The home screen shows personalized music recommendations and quick access to user favorites.
+<p align="center">
+<img width="362" alt="Top mixes" src="https://github.com/user-attachments/assets/c51beb4d-7250-4657-bb92-a585a5246891">
+</p>
 
 ### Album Detail Screen
+Offers detailed insights into albums, including song lists and comprehensive descriptions.
+<p align="center">
+<img width="360" alt="Pasted Graphic 21" src="https://github.com/user-attachments/assets/e635d535-db06-4d4d-9958-7fb69e207bc1">
+</p>
 
-Users can view detailed information about albums, including the list of songs and descriptions, offering a visually appealing and informative experience.
+---
