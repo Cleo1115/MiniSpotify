@@ -3,6 +3,42 @@
 ## Overview
 MiniSpotify is a mobile music streaming application developed using Kotlin, designed to deliver a premium Spotify-like experience. It leverages advanced Android technologies to ensure a seamless and efficient user interface and robust backend interactions.
 
+## Technical Architecture
+```mermaid
+graph LR
+    A[MiniSpotify Application] -->|Developed with| B(Kotlin)
+    A -->|Frontend Tech| C[UI Design]
+    A -->|Backend Tech| D[Backend Integration]
+    A -->|Data Handling| E[Data Management]
+    A -->|Media Playback| F[Audio Streaming]
+
+    C --> C1[Jetpack Compose]
+    C --> C2[Jetpack Navigation]
+
+    D --> D1[Mock RESTful API]
+    D --> D2[Retrofit]
+
+    E --> E1[Room Database Local Caching]
+    
+    F --> F1[Google Exoplayer]
+
+    style A fill:#e6f5ff,stroke:#1f7a8c,stroke-width:4px
+    style B fill:#ffccbc,stroke:#b85d1c,stroke-width:2px
+    style C fill:#d1e8e2,stroke:#1a5a5a,stroke-width:1px
+    style D fill:#d1e8e2,stroke:#1a5a5a,stroke-width:1px
+    style E fill:#d1e8e2,stroke:#1a5a5a,stroke-width:1px
+    style F fill:#d1e8e2,stroke:#1a5a5a,stroke-width:1px
+    style C1 fill:#fff,stroke:#1a5a5a,stroke-width:0px
+    style C2 fill:#fff,stroke:#1a5a5a,stroke-width:0px
+    style D1 fill:#fff,stroke:#1a5a5a,stroke-width:0px
+    style D2 fill:#fff,stroke:#1a5a5a,stroke-width:0px
+    style E1 fill:#fff,stroke:#1a5a5a,stroke-width:0px
+    style F1 fill:#fff,stroke:#1a5a5a,stroke-width:0px
+
+
+```
+
+
 ## Technical Specifications
 
 ### Frontend
